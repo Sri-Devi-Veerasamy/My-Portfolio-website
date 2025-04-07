@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../Components/Header'
 import Container1 from '../../Components/Container1'
+import CareerObjective from '../../Components/CareerObjective'
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Header />
       <Container1 />
+      <CareerObjective/>
 
     </div>
   )
