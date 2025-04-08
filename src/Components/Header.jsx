@@ -41,7 +41,7 @@ const Header = ({
       boxShadow: scrolled ? 'rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px' :''
     }}>
       <Container fluid>
-        <Navbar.Brand href="#" className="d-flex align-items-center brandName">Sri Devi</Navbar.Brand>
+        <Navbar.Brand href="#" className="d-flex align-items-center brandName">Sri Devi </Navbar.Brand>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link onClick={scrollTowork} href="#work" className="nav-link-hover fw-medium me-4">Work</Nav.Link>
