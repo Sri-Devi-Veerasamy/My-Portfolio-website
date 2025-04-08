@@ -1,7 +1,8 @@
  .container {
    display: flex;
    max-width: 1000px;
-   margin: auto;
+
+ margin-top: 10%;
    flex-wrap: wrap;
  }
  .left-section {

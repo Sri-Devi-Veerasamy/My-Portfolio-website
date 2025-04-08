@@ -6,9 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css';
 
 const Header = ({
-  scrollToFooter,
-  scrollTowork,
-  scrollToClients
+  
+  scrollToHome,
+  scrollToAbout,
+  scrollToSkills,
+  scrollToEducation
 
 }) => {
 
@@ -44,10 +46,10 @@ const Header = ({
         <Navbar.Brand href="#" className="d-flex align-items-center brandName">Sri Devi </Navbar.Brand>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link onClick={scrollTowork} href="#work" className="nav-link-hover fw-medium me-4">Work</Nav.Link>
-            <Nav.Link href="#services" className="nav-link-hover fw-medium me-4">Services</Nav.Link>
-            <Nav.Link onClick={scrollToClients}  href="#clients" className="nav-link-hover fw-medium me-4">Clients</Nav.Link>
-            <Nav.Link onClick={scrollToFooter} href="#about" className="nav-link-hover fw-medium me-4">About</Nav.Link>
+            <Nav.Link onClick={scrollToHome} href="#home" className="nav-link-hover fw-medium me-4">Home</Nav.Link>
+            <Nav.Link  onClick={scrollToAbout} href="#about" className="nav-link-hover fw-medium me-4">About</Nav.Link>
+            <Nav.Link onClick={scrollToSkills}  href="#skills" className="nav-link-hover fw-medium me-4">Skills</Nav.Link>
+            <Nav.Link onClick={scrollToEducation} href="#Education" className="nav-link-hover fw-medium me-4">Education</Nav.Link>
             {/* <Button onClick={scrollToFooter} className="btn-small d-flex align-items-center fw-bold">
               Contact <FaArrowRight className="arrow-icon fw-bold" />
             </Button> */}
