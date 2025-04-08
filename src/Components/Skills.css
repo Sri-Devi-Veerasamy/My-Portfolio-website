@@ -80,6 +80,10 @@
     .subtitle1{
         font-size: 15px;
     }
+.running-text-container1{
+    height: 80px;
+    width: 80px;
+}
 
     .overallcontainers {
         width: 100%;
@@ -94,12 +98,15 @@
 }
 
 @media (max-width: 576px) {
-
+    
     .subtitle{
         margin-top: 30px;
         font-size: 18px;
     }
-  
+    .running-text-container1{
+        height: 80px;
+        width: 80px;
+    }
     .overallcontainers {
         width: 100%;
     }
