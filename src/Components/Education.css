@@ -1,66 +1,101 @@
- .container {
-   display: flex;
-   max-width: 1000px;
-
- margin-top: 10%;
-   flex-wrap: wrap;
- }
- .left-section {
-   width: 250px;
-   padding-right: 10px;
- }
- .left-section h2 {
-   font-size: 24px;
-   font-weight: 700;
-   line-height: 1.4;
- }
- .right-section {
-   flex: 1;
- }
-
- .new{
-  display: flex;
-  gap:50px;
+ .overallbox {
+  padding-left: 30px;
+   padding-right: 30px;
+   margin-top: 5%;
 
  }
- 
-.cardbox {
-  
+ .subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(3, 3, 3);
+}
+
+.subtitle1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  color: rgb(3, 3, 3);
+}
+
+
+
+
+ .cardbox {
    padding: 10px;
-    border-radius: 15px; 
-   margin-bottom: 20px;
+   border-radius: 10px;
+   margin-bottom: 50px;
    display: flex;
    gap: 20px;
-   box-shadow:5px 5px 15px #D1D9E6, -5px -5px 15px #FFFFFF;
-   background:linear-gradient(145deg, #E2E8EC, #FFFFFF);
-   
+   box-shadow: 3px 3px 15px  #FFFFFF, -3px -3px 15px #e7ecf3;
+   background: linear-gradient(145deg,#FFFFFF, #eaeef1);
+   transition: all 0.3s ease-in-out;
+
  }
+
+
+ .cardbox:hover {
+
+  box-shadow: 3px 3px 10px #B1BFD8, -3px -3px 10px #FFFFFF; 
+  background: linear-gradient(145deg, #bee5ff,#ffffff, #ffffff); 
+  transform: scale(1.1); 
+}
  .year {
    font-weight: bold;
+   font-family: "Josefin Sans", sans-serif;
    color: #333;
    min-width: 50px;
  }
-  .content h3 {
-   margin: 0;
-   font-size: 16px;
-   font-weight: 700;
-   min-width: 50px;
- }
+
+
+
  .company {
-   font-weight: 600;
+   font-weight: 400;
    font-size: 14px;
-   margin-top: 4px;
+   margin-top: 2px;
    margin-bottom: 10px;
    color: #0f0f0f;
  }
+
  .description {
-  font-weight: 600;
-  font-size: 14px;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  color: #464545;
-} 
- .content p {
-   margin: 0;
+   font-weight: 600;
    font-size: 14px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   color: #464545;
  }
+
+
+ 
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .subtitle{
+     
+      font-size: 18px;
+  }
+  .subtitle1{
+    font-size: 14px;
+}
+  .description{
+    font-size: 12px;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  .subtitle{
+ 
+    font-size: 18px;
+}
+  .subtitle1{
+      font-size: 14px;
+  }
+
+  .description{
+    font-size: 12px;
+  }
+ 
+}

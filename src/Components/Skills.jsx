@@ -7,7 +7,7 @@ const Skills = () => {
     <div>
       <div className='d-flex flex-column flex-lg-row justify-content-between' style={{ paddingLeft: '30px', paddingRight: '30px' }}>
 
-        <div className='' style={{ width: '50%', }}>
+        <div className='overallcontainers' >
           <h3 className='title ' style={{ color: '#000' }}>Technical Skills</h3>
           <div className="running-text" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}> {/* Ensure flex-wrap works */}
 
@@ -15,8 +15,9 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=20909&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                className='imagesView'
+             
+
               />
               <p className="runText">HTML</p>
             </div>
@@ -24,8 +25,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=21278&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">CSS</p>
             </div>
@@ -33,8 +33,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">Bootstrap</p>
             </div>
@@ -42,8 +41,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=108784&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">Javascript</p>
             </div>
@@ -51,8 +49,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=123603&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">React js</p>
             </div>
@@ -61,8 +58,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=TpULddJc4gTh&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">C++</p>
             </div>
@@ -71,15 +67,14 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className='' style={{ width: '45%', }}>
+        <div className='overallcontainers'>
           <h3 className='title' style={{ color: '#000' }}>Source Code Management & Other skills</h3>
           <div className="running-text" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}> {/* Ensure flex-wrap works */}
             <div className="running-text-container1" style={{}}>
               <img
                 src={'https://img.icons8.com/?size=100&id=20906&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">Git</p>
             </div>
@@ -87,8 +82,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=12599&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">GitHub</p>
             </div>
@@ -96,8 +90,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=13674&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">Word</p>
             </div>
@@ -105,8 +98,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=117561&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">Excel</p>
             </div>
@@ -114,8 +106,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=81726&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">PowerPoint</p>
             </div>
@@ -124,8 +115,7 @@ const Skills = () => {
               <img
                 src={'https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000'}
                 alt="Brand Logo"
-                width="50px"
-                height="50px"
+                  className='imagesView'
               />
               <p className="runText">Canva</p>
             </div>
