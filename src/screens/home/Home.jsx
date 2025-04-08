@@ -5,12 +5,12 @@ import CareerObjective from '../../Components/CareerObjective'
 
 
 const Home = () => {
-  return ( 
+  return (
     <div>
       <Header />
       <Container1 />
-      <CareerObjective/>
-
+      <CareerObjective />
+      <div style={{ height: 200 }}></div>
     </div>
   )
 }
