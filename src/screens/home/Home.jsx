@@ -10,8 +10,9 @@ const Home = () => {
       <Header />
       <Container1 />
       <CareerObjective />
-      <Skills />
+    
       <Education/>
+      <div style={{ height: 200 }}></div>
     </div>
   )
 }
