@@ -4,6 +4,7 @@ import Container1 from '../../Components/Container1'
 import CareerObjective from '../../Components/CareerObjective'
 import Education from '../../Components/Education'
 import Skills from '../../Components/Skills'
+import Internship from '../../Components/Internship'
 
 const Home = () => {
 
@@ -44,8 +45,9 @@ const Home = () => {
       <div ref={educationRef}>
         <Education />
       </div>
-   
+   <Internship/>
     </div>
+  
   )
 }
 

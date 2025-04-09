@@ -37,7 +37,7 @@
  .cardbox:hover {
 
   box-shadow: 3px 3px 10px #B1BFD8, -3px -3px 10px #FFFFFF; 
-  background: linear-gradient(145deg, #bee5ff,#ffffff, #ffffff); 
+  background: linear-gradient(145deg, #afd68f,#ffffff, #def172); 
   transform: scale(1.1); 
 }
  .year {

@@ -6,7 +6,7 @@ const Education = () => {
   const list = [
     {
       year: '2022 - 2025',
-      std: 'Bachelor Of Science ( Physics )',
+      std:  'Bachelor Of Science ( Physics )',
       clg: 'Thiagarajar College',
       description: 'In college, I gained proficiency in MS Word, Excel, and PowerPoint, along with strong discipline and technical skills. I also developed teamwork and communication abilities through organizing events like the Science Expo and intercollegiate meet.'
     },
