@@ -1,45 +1,132 @@
-.int section {
-      background-color: #ccfab1;
-      padding: 40px 20px;
-      text-align: center;
-      align-items: center;
-      align-content: center;
-    }
+.int.section {
+  background-image: url('../images/90.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  background-attachment: fixed;
+  /* Keeps the background image fixed while scrolling */
+  background-position: center;
+  background-color: #ccfab1;
+  /* Fallback background color */
+  padding: 40px 20px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  /* Adjust text color to contrast with the background */
+}
 
-    .int section h2 {
-      margin-bottom: 30px;
-      font-size: 20px;
-      font-weight: normal;
-    }
+.int.section h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: normal;
+}
 
-    .features {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      background-color: white;
-      padding: 40px 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
+.features {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 40px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .feature {
-      flex: 1;
-      max-width: 500px;
-      text-align: center;
-    }
+.feature {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
 
-    .feature img {
-      height: 30px;
-      margin-bottom: 15px;
-    }
+.feature img {
+  height: 30px;
+  margin-bottom: 15px;
+}
 
-    .feature h4 {
-      margin-bottom: 10px;
-      color: #333;
-    }
+.feature h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
 
-    .feature p {
-      color: #555;
-      font-size: 14px;
-    }
+.feature h5 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #0b0b0b;
+}
 
+.feature h6 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #0b0b0b;
+}
+
+.feature p {
+  color: #555;
+  font-size: 14px;
+}
+
+.linedesign {
+  height: 200px;
+  width: 0.5px;
+  background-color: #868585
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .linedesign {
+    height: 0.5px;
+    width: 100%;
    
+  }
+
+  .feature h4 {
+    font-size: 16px;
+
+  }
+
+  .feature h5 {
+    font-size: 14px;
+  }
+
+  .feature h6 {
+
+    font-size: 12px;
+
+  }
+
+  .feature p {
+
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .linedesign {
+    height: 0.5px;
+    width: 100%;
+  
+  }
+  .feature h4 {
+    font-size: 16px;
+
+  }
+
+  .feature h5 {
+    font-size: 14px;
+  }
+
+  .feature h6 {
+
+    font-size: 12px;
+
+  }
+
+  .feature p {
+
+    font-size: 11px;
+  }
+
+}

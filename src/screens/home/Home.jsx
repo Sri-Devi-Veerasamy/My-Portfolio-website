@@ -5,6 +5,7 @@ import CareerObjective from '../../Components/CareerObjective'
 import Education from '../../Components/Education'
 import Skills from '../../Components/Skills'
 import Internship from '../../Components/Internship'
+import Certificate from '../../Components/Certificate'
 
 const Home = () => {
 
@@ -46,6 +47,7 @@ const Home = () => {
         <Education />
       </div>
    <Internship/>
+   <Certificate/>
     </div>
   
   )
