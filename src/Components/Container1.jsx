@@ -20,13 +20,28 @@ const Container1 = () => {
         document.body.removeChild(link);
         setShowToast(true);
     };
-
     const handleClick = () => {
-        const phoneNumber = '+917339314128';
-        const message = 'Hi, I saw your portfolio and I\'m interested in working with you.';
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
-      };
+        const email = 'yourmail@example.com';
+        const subject = 'Hire Sri Devi';
+        const body = 'Hi Sri Devi, I am interested in hiring you.';
+    
+        // Create mailto link
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+        // Attempt to open email client
+        window.location.href = mailtoLink;
+    
+        // After a short delay, fallback to WhatsApp
+        // setTimeout(() => {
+        //     const phoneNumber = '+917339314128'; // WhatsApp number
+        //     const message = 'Hi, I saw your portfolio and I\'m interested in working with you.';
+        //     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+        //     // Open WhatsApp chat if email didn't open
+        //     window.location.href = whatsappLink;
+        // }, 2000); 
+    };
+ 
 
     return (
         <div
@@ -70,6 +85,7 @@ const Container1 = () => {
                     <Button onClick={handleClick} className='hireme'>
                         Hire Me
                     </Button>
+                    
                     <Button onClick={() => { handleDownload() }} className='Resume'>
                         Resume <FiDownload size={13} style={{ marginLeft: 5 }} />
                     </Button>
