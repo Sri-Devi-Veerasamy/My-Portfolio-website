@@ -58,7 +58,7 @@ const About = () => {
                 </div>
                 <div className='d-flex flex-row'>
 
-                <div   onClick={() => window.location.href  =`https://www.linkedin.com/in/sri-devi-veerasamy-674aa2268`} className="running-text-container2">
+                <div   onClick={() => window.location.href  =`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="running-text-container2">
                     <img
                       src={'https://img.icons8.com/?size=100&id=16713&format=png&color=000000'}
                       alt="Brand Logo"
@@ -66,7 +66,7 @@ const About = () => {
                     />
                     <p className="runText">Whatsapp</p>
                   </div>
-                  <div   onClick={() => window.location.href  =`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="running-text-container2">
+                  <div   onClick={() => window.location.href  =`https://www.linkedin.com/in/sri-devi-veerasamy-674aa2268`} className="running-text-container2">
                     <img
                       src={'https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000'}
                       alt="Brand Logo"
