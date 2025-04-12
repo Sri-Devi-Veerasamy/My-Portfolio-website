@@ -81,7 +81,7 @@ const Container1 = () => {
                     <Nav.Link href={`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="nav-link-hover fw-bold me-4"><FaWhatsapp size={22} /></Nav.Link>
                     <Nav.Link href={`tel:+917339314128`} className="nav-link-hover fw-bold me-4"><MdCall size={22} /></Nav.Link>
                 </div>
-            </div>
+            </div> 
 
             <div
                 className='image-container '

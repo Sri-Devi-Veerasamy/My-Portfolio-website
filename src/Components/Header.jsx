@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +8,8 @@ const Header = ({
   scrollToHome,
   scrollToAbout,
   scrollToSkills,
-  scrollToEducation
+  scrollToEducation,
+  scrollToInternship
 
 }) => {
 
@@ -50,11 +49,11 @@ const Header = ({
             <Nav.Link  onClick={scrollToAbout} href="#about" className="nav-link-hover fw-medium me-4">About</Nav.Link>
             <Nav.Link onClick={scrollToSkills}  href="#skills" className="nav-link-hover fw-medium me-4">Skills</Nav.Link>
             <Nav.Link onClick={scrollToEducation} href="#Education" className="nav-link-hover fw-medium me-4">Education</Nav.Link>
+            <Nav.Link onClick={scrollToInternship} href="#Internship" className="nav-link-hover fw-medium me-4">Internship</Nav.Link>
             {/* <Button onClick={scrollToFooter} className="btn-small d-flex align-items-center fw-bold">
               Contact <FaArrowRight className="arrow-icon fw-bold" />
             </Button> */}
-            
-          </Nav>
+            </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
