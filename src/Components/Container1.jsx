@@ -24,24 +24,23 @@ const Container1 = () => {
         const email = 'yourmail@example.com';
         const subject = 'Hire Sri Devi';
         const body = 'Hi Sri Devi, I am interested in hiring you.';
-    
-        // Create mailto link
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-        // Attempt to open email client
+
+        // Try to open email client
         window.location.href = mailtoLink;
-    
-        // After a short delay, fallback to WhatsApp
-        // setTimeout(() => {
-        //     const phoneNumber = '+917339314128'; // WhatsApp number
-        //     const message = 'Hi, I saw your portfolio and I\'m interested in working with you.';
-        //     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
-        //     // Open WhatsApp chat if email didn't open
-        //     window.location.href = whatsappLink;
-        // }, 2000); 
+
+        // After a delay, ask the user if it worked
+        setTimeout(() => {
+            const proceed = window.confirm("Did your email app open? If not, would you like to contact me via WhatsApp instead?");
+
+            if (proceed) {
+                const phoneNumber = '+917339314128';
+                const message = 'Hi, I saw your portfolio and I\'m interested in working with you.';
+                const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappLink, '_blank');
+            }
+        }, 2500); // Adjust delay if needed
     };
- 
 
     return (
         <div
@@ -85,7 +84,7 @@ const Container1 = () => {
                     <Button onClick={handleClick} className='hireme'>
                         Hire Me
                     </Button>
-                    
+
                     <Button onClick={() => { handleDownload() }} className='Resume'>
                         Resume <FiDownload size={13} style={{ marginLeft: 5 }} />
                     </Button>
@@ -97,7 +96,7 @@ const Container1 = () => {
                     <Nav.Link href={`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="nav-link-hover fw-bold me-4"><FaWhatsapp size={22} /></Nav.Link>
                     <Nav.Link href={`tel:+917339314128`} className="nav-link-hover fw-bold me-4"><MdCall size={22} /></Nav.Link>
                 </div>
-            </div> 
+            </div>
 
             <div
                 className='image-container '
