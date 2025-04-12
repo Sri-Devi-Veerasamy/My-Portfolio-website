@@ -63,7 +63,7 @@ const Container1 = () => {
                     <Nav.Link href={`tel:+917339314128`} className="nav-link-hover fw-bold me-4"><MdCall size={22} /></Nav.Link>
 
                 </div>
-            </div>
+            </div> 
 
             <div
                 className='image-container '
