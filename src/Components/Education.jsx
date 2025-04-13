@@ -9,6 +9,7 @@ const Education = () => {
       std:  'Bachelor Of Science ( Physics )',
       clg: 'Thiagarajar College',
       description: 'In college, I gained proficiency in MS Word, Excel, and PowerPoint, along with strong discipline and technical skills. I also developed teamwork and communication abilities through organizing events like the Science Expo and intercollegiate meet.'
+  
     },
     {
       year: '2022',
@@ -30,7 +31,7 @@ const Education = () => {
   return (
     <div className="overallbox w-100">
 
-      <h2 className='subtitle'>Education</h2>
+      <h2 className='subtitle' style={{fontWeight:'bolder'}}>Education</h2>
       <div className='d-flex flex-column flex-lg-row gap-lg-5 gap-sm-3 mt-lg-5 mt-sm-4'>
         {
           list.map((item, index) => {

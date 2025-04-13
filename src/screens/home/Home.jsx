@@ -10,17 +10,19 @@ import About from '../../Components/About'
 const Home = () => {
 
   const homeRef = useRef(null)
-  const aboutRef = useRef(null)
+  const objectiveRef = useRef(null)
   const skillsRef = useRef(null)
   const educationRef = useRef(null)
   const internshipRef = useRef(null)
+  const aboutRef = useRef(null)
+
 
   const scrollTohome = () => {
     homeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
-  const scrollToAbout = () => {
-    aboutRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const scrollToObjective = () => {
+    objectiveRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
   const scrollToSkills = () => {
     skillsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -32,15 +34,18 @@ const Home = () => {
   const scrollToInternship = () => {
     internshipRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
+  const scrollToAbout = () => {
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
 
 
   return (
     <div>
-      <Header scrollToHome={scrollTohome} scrollToAbout={scrollToAbout} scrollToSkills={scrollToSkills} scrollToEducation={scrollToEducation} scrollToInternship={scrollToInternship} />
+      <Header scrollToHome={scrollTohome} scrollToObjective={scrollToObjective} scrollToSkills={scrollToSkills} scrollToEducation={scrollToEducation} scrollToInternship={scrollToInternship} scrollToAbout={scrollToAbout} />
       <div id='home' ref={homeRef}>
         <Container1 />
       </div>
-      <div ref={aboutRef}>
+      <div ref={objectiveRef}>
         <CareerObjective />
       </div>
       <div ref={skillsRef}>
@@ -52,8 +57,11 @@ const Home = () => {
       <div ref={internshipRef}>
         <Internship />
       </div>
+      <div ref={aboutRef}>
+        <About />
+      </div>
    
-   <About/>
+   {/* <About/> */}
     </div>
   
   )

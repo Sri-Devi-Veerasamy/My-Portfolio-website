@@ -24,10 +24,10 @@
 }
 .personal  {
  flex: 1;
- min-width: 300px;
- padding-left: 20px;
- padding-right: 20px;
- align-content: center;
+
+ padding-left: 10px;
+ padding-right: 10px;
+
 }
 
 .personal h3 {
@@ -46,18 +46,18 @@
 
 
 
-.imagesView{
+.imagesView1{
   width: 20px;
   height: 20px;
 }
 
 
 
-.runText {
+.runText1 {
 font-weight: 200;
 margin: 0;
 padding: 0 10px;
-color: black;
+color: rgb(255, 255, 255);
 transition: color 0.3s ease, font-size 0.3s ease;
 }
 
@@ -74,12 +74,12 @@ align-content: center;
 justify-items: center;
 margin-right: 40px;
 border-radius: 10px;
-background: #FFFFFF;
+/* background: #b1ebf5; */
 transition: all 0.3s ease-in-out;
 }
+
+
 .running-text-container2:hover {
-
-
 transform: scale(1.1); 
 }
 
