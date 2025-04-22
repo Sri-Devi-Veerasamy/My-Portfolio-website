@@ -1,9 +1,6 @@
 import React from 'react'
 import './About.css';
-import { Nav } from 'react-bootstrap';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { FaWhatsapp } from 'react-icons/fa';
-import { MdCall } from 'react-icons/md';
+
 const About = () => {
   return (
     <div >
@@ -39,10 +36,10 @@ const About = () => {
                 </div>
                 <div>
 
-                  <li>
+                  {/* <li>
                     <strong style={{ color: 'orange', fontWeight: 'bold' }}>Phone :</strong>
                     <span style={{ color: '#fff', fontFamily: 'Arial', fontSize: '16px', marginLeft: '5px' }}>+91 7339314128</span>
-                  </li>
+                  </li> */}
                   <li>
                     <strong style={{ color: 'orange', fontWeight: 'bold' }}>Email :</strong>
                     <span style={{ color: '#fff', fontFamily: 'Arial', fontSize: '16px', marginLeft: '5px' }}>srideviv1303@gmail.com</span>
@@ -58,14 +55,14 @@ const About = () => {
                 </div>
                 <div className='d-flex flex-row'>
 
-                <div   onClick={() => window.location.href  =`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="running-text-container2">
+                {/* <div   onClick={() => window.location.href  =`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="running-text-container2">
                     <img
                       src={'https://img.icons8.com/?size=100&id=16713&format=png&color=000000'}
                       alt="Brand Logo"
                       className='imagesView'
                     />
                     <p className="runText">Whatsapp</p>
-                  </div>
+                  </div> */}
                   <div   onClick={() => window.location.href  =`https://www.linkedin.com/in/sri-devi-veerasamy-674aa2268`} className="running-text-container2">
                     <img
                       src={'https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000'}

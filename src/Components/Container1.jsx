@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { Button, Nav, Toast, ToastContainer } from 'react-bootstrap';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaWhatsapp } from 'react-icons/fa';
-import { MdCall } from 'react-icons/md';
+import { MdAlternateEmail, MdCall, MdEmail } from 'react-icons/md';
 import { FiDownload } from 'react-icons/fi';
 
 
@@ -21,7 +21,7 @@ const Container1 = () => {
         setShowToast(true);
     };
     const handleClick = () => {
-        const email = 'yourmail@example.com';
+        const email = 'srideviv1303@gmail.com';
         const subject = 'Hire Sri Devi';
         const body = 'Hi Sri Devi, I am interested in hiring you.';
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -29,17 +29,17 @@ const Container1 = () => {
         // Try to open email client
         window.location.href = mailtoLink;
 
-        // After a delay, ask the user if it worked
-        setTimeout(() => {
-            const proceed = window.confirm("Did your email app open? If not, would you like to contact me via WhatsApp instead?");
+        // // After a delay, ask the user if it worked
+        // setTimeout(() => {
+        //     const proceed = window.confirm("Did your email app open? If not, would you like to contact me via WhatsApp instead?");
 
-            if (proceed) {
-                const phoneNumber = '+917339314128';
-                const message = 'Hi, I saw your portfolio and I\'m interested in working with you.';
-                const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(whatsappLink, '_blank');
-            }
-        }, 2500); // Adjust delay if needed
+        //     if (proceed) {
+        //         const phoneNumber = '+917339314128';
+        //         const message = 'Hi, I saw your portfolio and I\'m interested in working with you.';
+        //         const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        //         window.open(whatsappLink, '_blank');
+        //     }
+        // }, 2500); // Adjust delay if needed
     };
 
     return (
@@ -93,8 +93,8 @@ const Container1 = () => {
                 <div className='buttons' style={{ marginTop: 30 }}>
                     <Nav.Link href={`https://github.com/Sri-Devi-Veerasamy`} className="nav-link-hover fw-bold me-4"><BsGithub size={22} /></Nav.Link>
                     <Nav.Link href={`https://www.linkedin.com/in/sri-devi-veerasamy-674aa2268`} className="nav-link-hover fw-bold me-4"><BsLinkedin size={22} /></Nav.Link>
-                    <Nav.Link href={`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="nav-link-hover fw-bold me-4"><FaWhatsapp size={22} /></Nav.Link>
-                    <Nav.Link href={`tel:+917339314128`} className="nav-link-hover fw-bold me-4"><MdCall size={22} /></Nav.Link>
+                    {/* <Nav.Link href={`https://wa.me/${'+917339314128'}?text=${encodeURIComponent('Hi')}`} className="nav-link-hover fw-bold me-4"><FaWhatsapp size={22} /></Nav.Link> */}
+                    <div onClick={handleClick} className="nav-link-hover fw-bold me-4"><MdAlternateEmail size={22} /></div>
                 </div>
             </div>
 
