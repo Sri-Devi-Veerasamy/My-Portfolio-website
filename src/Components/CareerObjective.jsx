@@ -33,7 +33,7 @@ const CareerObjective = () => {
   )
 }
 
-export default CareerObjective
+export default CareerObjective;
 
 
 

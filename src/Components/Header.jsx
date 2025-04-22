@@ -6,10 +6,11 @@ import './header.css';
 const Header = ({
   
   scrollToHome,
-  scrollToAbout,
+  scrollToObjective,
   scrollToSkills,
   scrollToEducation,
-  scrollToInternship
+  scrollToInternship,
+  scrollToAbout
 
 }) => {
 
@@ -46,10 +47,11 @@ const Header = ({
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link onClick={scrollToHome} href="#home" className="nav-link-hover fw-medium me-4">Home</Nav.Link>
-            <Nav.Link  onClick={scrollToAbout} href="#about" className="nav-link-hover fw-medium me-4">About</Nav.Link>
+            <Nav.Link  onClick={scrollToObjective} href="#Objective" className="nav-link-hover fw-medium me-4">Objective</Nav.Link>
             <Nav.Link onClick={scrollToSkills}  href="#skills" className="nav-link-hover fw-medium me-4">Skills</Nav.Link>
             <Nav.Link onClick={scrollToEducation} href="#Education" className="nav-link-hover fw-medium me-4">Education</Nav.Link>
             <Nav.Link onClick={scrollToInternship} href="#Internship" className="nav-link-hover fw-medium me-4">Internship</Nav.Link>
+            <Nav.Link onClick={scrollToAbout} href="#About" className="nav-link-hover fw-medium me-4">About</Nav.Link>
             {/* <Button onClick={scrollToFooter} className="btn-small d-flex align-items-center fw-bold">
               Contact <FaArrowRight className="arrow-icon fw-bold" />
             </Button> */}

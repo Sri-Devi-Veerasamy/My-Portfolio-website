@@ -7,7 +7,7 @@ const Skills = () => {
       <div className='d-flex flex-column flex-lg-row justify-content-between' style={{ paddingLeft: '30px', paddingRight: '30px' }}>
 
         <div className='overallcontainers' >
-          <h3 className='title ' style={{ color: '#000' }}>Technical Skills</h3>
+          <h3 className='title ' style={{ color: '#000' ,fontWeight:'bolder' }}>Technical Skills</h3>
           <div className="running-text" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}> {/* Ensure flex-wrap works */}
 
             <div className="running-text-container1" style={{}}>
