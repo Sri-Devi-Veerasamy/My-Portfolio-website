@@ -1,0 +1,35 @@
+.title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(13, 13, 13);
+}
+
+.subtitle {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(3, 3, 3);
+}
+
+/* Running Text Container Styles */
+.running-text-container {
+    display: flex;
+    width: 90%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.running-text {
+    margin-top: 30px;
+
+}
+
+.runText {
+    font-weight: bold;
+    margin: 0;
+    padding: 0 10px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+
